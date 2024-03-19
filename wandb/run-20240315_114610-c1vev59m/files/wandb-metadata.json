@@ -1,0 +1,172 @@
+{
+    "os": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-03-15T03:46:11.846767",
+    "startedAt": "2024-03-15T03:46:10.723964",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--output_dir",
+        "./clip-bert-finetuned",
+        "--model_name_or_path",
+        "./clip-bert",
+        "--data_dir",
+        "/home/alex/simplified_clip/data/COCO2017",
+        "--dataset_name",
+        "ydshieh/coco_dataset_script",
+        "--dataset_config_name=2017",
+        "--image_column",
+        "image_path",
+        "--caption_column",
+        "caption",
+        "--remove_unused_columns=False",
+        "--do_train",
+        "--do_eval",
+        "--per_device_train_batch_size=64",
+        "--per_device_eval_batch_size=64",
+        "--learning_rate=5e-5",
+        "--warmup_steps=0",
+        "--weight_decay",
+        "0.1",
+        "--overwrite_output_dir"
+    ],
+    "state": "running",
+    "program": "/home/alex/simplified_clip/run_clip.py",
+    "codePathLocal": "run_clip.py",
+    "codePath": "run_clip.py",
+    "git": {
+        "remote": "https://github.com/Alexios-hub/simplified_clip.git",
+        "commit": "e854edf4755aca99e21dbb86774d0e7b24d5fc5c"
+    },
+    "email": "582754347@qq.com",
+    "root": "/home/alex/simplified_clip",
+    "host": "DESKTOP-AKJR3UN",
+    "username": "alex",
+    "executable": "/home/alex/miniconda3/envs/sim_clip/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3494.399,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.399,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 266.0781936645508
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 28.393016815185547
+    }
+}

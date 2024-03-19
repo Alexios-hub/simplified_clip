@@ -1,0 +1,299 @@
+Using the latest cached version of the module from /home/alex/.cache/huggingface/modules/datasets_modules/datasets/ydshieh--coco_dataset_script/e033205c0266a54c10be132f9264f2a39dcf893e798f6756d224b1ff5078998f (last modified on Thu Mar 14 12:38:10 2024) since it couldn't be found locally at ydshieh/coco_dataset_script., or remotely on the Hugging Face Hub.
+Repo card metadata block was not found. Setting CardData to empty.
+simplified transformer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/1 Loss: 6.2344:  23%|████████████▉                                           | 267/1156 [12:48<42:40,  2.88s/it]
+Traceback (most recent call last):
+  File "/home/alex/simplified_clip/clip_torch.py", line 113, in <module>
+    for images, texts in train_dataloader:
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/alex/simplified_clip/clip_torch.py", line 54, in __getitem__
+    image = self.preprocess(Image.open(self.ds[index]['image_path']))
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 354, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 467, in resize
+    return F_pil.resize(img, size=output_size, interpolation=pil_interpolation)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/transforms/_functional_pil.py", line 250, in resize
+    return img.resize(tuple(size[::-1]), interpolation)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/PIL/Image.py", line 2200, in resize
+    return self._new(self.im.resize(size, resample, box))
+KeyboardInterrupt

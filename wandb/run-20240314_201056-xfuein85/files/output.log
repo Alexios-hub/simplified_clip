@@ -1,0 +1,26 @@
+  0%|                                                                                                                                                                                                                                                                                                    | 0/3468 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/alex/simplified_clip/run_clip.py", line 68, in <module>
+    trainer.train()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/transformers/trainer.py", line 1645, in train
+    return inner_training_loop(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/transformers/trainer.py", line 1916, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2807, in __getitems__
+    batch = self.__getitem__(keys)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2803, in __getitem__
+    return self._getitem(key)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2787, in _getitem
+    pa_subtable = query_table(self._data, key, indices=self._indices if self._indices is not None else None)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 583, in query_table
+    _check_valid_index_key(key, size)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 536, in _check_valid_index_key
+    _check_valid_index_key(int(max(key)), size=size)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 526, in _check_valid_index_key
+    raise IndexError(f"Invalid key: {key} is out of bounds for size {size}")
+IndexError: Invalid key: 591661 is out of bounds for size 0

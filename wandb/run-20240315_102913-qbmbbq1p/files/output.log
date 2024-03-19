@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+  0%|                                                                              | 26/27741 [00:15<4:22:16,  1.76it/s]Traceback (most recent call last):
+  File "/home/alex/simplified_clip/run_clip_2.py", line 582, in <module>
+    main()
+  File "/home/alex/simplified_clip/run_clip_2.py", line 547, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1638, in train
+    return inner_training_loop(
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1976, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 2890, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 2913, in compute_loss
+    outputs = model(**inputs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/vision_text_dual_encoder/modeling_vision_text_dual_encoder.py", line 364, in forward
+    text_outputs = self.text_model(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/bert/modeling_bert.py", line 1013, in forward
+    encoder_outputs = self.encoder(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/bert/modeling_bert.py", line 607, in forward
+    layer_outputs = layer_module(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/bert/modeling_bert.py", line 539, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/alex/simplified_clip/transformers/src/transformers/pytorch_utils.py", line 237, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/bert/modeling_bert.py", line 552, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/models/bert/modeling_bert.py", line 466, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1507, in _wrapped_call_impl
+    def _wrapped_call_impl(self, *args, **kwargs):
+KeyboardInterrupt

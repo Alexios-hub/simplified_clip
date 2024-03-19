@@ -1,0 +1,85 @@
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Configure stats pid to 13388
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Loading settings from /home/alex/.config/wandb/settings
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Loading settings from /home/alex/simplified_clip/wandb/settings
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_clip_2.py', 'program_abspath': '/home/alex/simplified_clip/run_clip_2.py', 'program': '/home/alex/simplified_clip/run_clip_2.py'}
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_init.py:_log_setup():528] Logging user logs to /home/alex/simplified_clip/wandb/run-20240315_110340-605qe79v/logs/debug.log
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_init.py:_log_setup():529] Logging internal logs to /home/alex/simplified_clip/wandb/run-20240315_110340-605qe79v/logs/debug-internal.log
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_init.py:init():568] calling init triggers
+2024-03-15 11:03:40,371 INFO    MainThread:13388 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2024-03-15 11:03:40,372 INFO    MainThread:13388 [wandb_init.py:init():618] starting backend
+2024-03-15 11:03:40,372 INFO    MainThread:13388 [wandb_init.py:init():622] setting up manager
+2024-03-15 11:03:40,373 INFO    MainThread:13388 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-15 11:03:40,373 INFO    MainThread:13388 [wandb_init.py:init():628] backend started and connected
+2024-03-15 11:03:40,374 INFO    MainThread:13388 [wandb_init.py:init():720] updated telemetry
+2024-03-15 11:03:40,376 INFO    MainThread:13388 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-15 11:04:38,576 INFO    Thread-2 (wrapped_target):13388 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 779, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1048, in _prepare_proxy
+    conn.connect()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connection.py", line 633, in connect
+    self._tunnel()  # type: ignore[attr-defined]
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/http/client.py", line 921, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 781, in urlopen
+    self._raise_timeout(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2024-03-15 11:05:10,415 ERROR   MainThread:13388 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-03-15 11:05:12,433 ERROR   MainThread:13388 [wandb_init.py:init():1188] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    run = wi.init()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-03-15 11:05:15,421 WARNING MsgRouterThr:13388 [router.py:message_loop():77] message_loop has been closed

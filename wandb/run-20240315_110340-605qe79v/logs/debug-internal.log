@@ -1,0 +1,85 @@
+2024-03-15 11:03:40,374 INFO    StreamThr :13832 [internal.py:wandb_internal():86] W&B internal server running at pid: 13832, started at: 2024-03-15 11:03:40.374087
+2024-03-15 11:03:40,376 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: status
+2024-03-15 11:03:40,376 INFO    WriterThread:13832 [datastore.py:open_for_write():85] open: /home/alex/simplified_clip/wandb/run-20240315_110340-605qe79v/run-605qe79v.wandb
+2024-03-15 11:03:40,377 DEBUG   SenderThread:13832 [sender.py:send():380] send: header
+2024-03-15 11:03:40,377 DEBUG   SenderThread:13832 [sender.py:send():380] send: run
+2024-03-15 11:03:45,379 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:03:50,381 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:03:55,383 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:00,385 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:05,387 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:10,389 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:15,391 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:20,393 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:25,395 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:30,398 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:35,400 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:40,402 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:43,777 INFO    SenderThread:13832 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 779, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1048, in _prepare_proxy
+    conn.connect()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connection.py", line 633, in connect
+    self._tunnel()  # type: ignore[attr-defined]
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/http/client.py", line 921, in _tunnel
+    (version, code, message) = response._read_status()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 781, in urlopen
+    self._raise_timeout(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2024-03-15 11:04:45,405 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:50,407 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:04:55,408 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:05:00,411 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:05:05,413 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-15 11:05:10,415 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: cancel
+2024-03-15 11:05:10,415 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: cancel
+2024-03-15 11:05:10,415 DEBUG   SenderThread:13832 [sender.py:send():389] Record cancelled: run
+2024-03-15 11:05:10,415 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 11:05:12,436 DEBUG   HandlerThread:13832 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-15 11:05:12,436 INFO    HandlerThread:13832 [handler.py:finish():866] shutting down handler
+2024-03-15 11:05:13,415 INFO    SenderThread:13832 [sender.py:finish():1534] shutting down sender
+2024-03-15 11:05:13,416 INFO    WriterThread:13832 [datastore.py:close():294] close: /home/alex/simplified_clip/wandb/run-20240315_110340-605qe79v/run-605qe79v.wandb

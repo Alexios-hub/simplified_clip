@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|██▍                                                                                                                                                                                                                                                                       | 259/27741 [02:25<4:21:59,  1.75it/s]Traceback (most recent call last):
+  File "/home/alex/simplified_clip/run_clip_2.py", line 583, in <module>
+    main()
+  File "/home/alex/simplified_clip/run_clip_2.py", line 548, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1638, in train
+    return inner_training_loop(
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1976, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 2899, in training_step
+    self.accelerator.backward(loss)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/accelerate/accelerator.py", line 2001, in backward
+    loss.backward(**kwargs)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

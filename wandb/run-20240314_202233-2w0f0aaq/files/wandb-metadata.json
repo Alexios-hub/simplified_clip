@@ -1,0 +1,153 @@
+{
+    "os": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-03-14T12:22:34.465519",
+    "startedAt": "2024-03-14T12:22:33.247431",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--per_device_train_batch_size",
+        "64",
+        "--per_device_eval_batch_size",
+        "64"
+    ],
+    "state": "running",
+    "program": "/home/alex/simplified_clip/run_clip.py",
+    "codePathLocal": "run_clip.py",
+    "codePath": "run_clip.py",
+    "git": {
+        "remote": "https://github.com/Alexios-hub/simplified_clip.git",
+        "commit": "e854edf4755aca99e21dbb86774d0e7b24d5fc5c"
+    },
+    "email": "582754347@qq.com",
+    "root": "/home/alex/simplified_clip",
+    "host": "DESKTOP-AKJR3UN",
+    "username": "alex",
+    "executable": "/home/alex/miniconda3/envs/sim_clip/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3494.4000000000005,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3494.4,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 264.1347999572754
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 28.39301300048828
+    }
+}

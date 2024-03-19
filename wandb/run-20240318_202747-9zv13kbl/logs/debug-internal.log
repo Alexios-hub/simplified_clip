@@ -1,0 +1,805 @@
+2024-03-18 20:27:47,235 INFO    StreamThr :232185 [internal.py:wandb_internal():86] W&B internal server running at pid: 232185, started at: 2024-03-18 20:27:47.235361
+2024-03-18 20:27:47,237 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status
+2024-03-18 20:27:47,238 INFO    WriterThread:232185 [datastore.py:open_for_write():85] open: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/run-9zv13kbl.wandb
+2024-03-18 20:27:47,238 DEBUG   SenderThread:232185 [sender.py:send():380] send: header
+2024-03-18 20:27:47,238 DEBUG   SenderThread:232185 [sender.py:send():380] send: run
+2024-03-18 20:27:47,951 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: check_version
+2024-03-18 20:27:47,956 INFO    SenderThread:232185 [dir_watcher.py:__init__():211] watching files in: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files
+2024-03-18 20:27:47,956 INFO    SenderThread:232185 [sender.py:_start_run_threads():1122] run started: 9zv13kbl with start time 1710764867.235123
+2024-03-18 20:27:47,956 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: check_version
+2024-03-18 20:27:48,264 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: run_start
+2024-03-18 20:27:48,289 DEBUG   HandlerThread:232185 [system_info.py:__init__():32] System info init
+2024-03-18 20:27:48,289 DEBUG   HandlerThread:232185 [system_info.py:__init__():47] System info init done
+2024-03-18 20:27:48,289 INFO    HandlerThread:232185 [system_monitor.py:start():194] Starting system monitor
+2024-03-18 20:27:48,289 INFO    SystemMonitor:232185 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-18 20:27:48,289 INFO    HandlerThread:232185 [system_monitor.py:probe():214] Collecting system info
+2024-03-18 20:27:48,291 INFO    SystemMonitor:232185 [interfaces.py:start():190] Started cpu monitoring
+2024-03-18 20:27:48,291 INFO    SystemMonitor:232185 [interfaces.py:start():190] Started disk monitoring
+2024-03-18 20:27:48,291 INFO    SystemMonitor:232185 [interfaces.py:start():190] Started gpu monitoring
+2024-03-18 20:27:48,292 INFO    SystemMonitor:232185 [interfaces.py:start():190] Started memory monitoring
+2024-03-18 20:27:48,293 INFO    SystemMonitor:232185 [interfaces.py:start():190] Started network monitoring
+2024-03-18 20:27:48,297 DEBUG   HandlerThread:232185 [system_info.py:probe():196] Probing system
+2024-03-18 20:27:48,304 DEBUG   HandlerThread:232185 [system_info.py:_probe_git():181] Probing git
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_info.py:_probe_git():189] Probing git done
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_info.py:probe():244] Probing system done
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_monitor.py:probe():223] {'os': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-03-18T12:27:48.298013', 'startedAt': '2024-03-18T12:27:47.220320', 'docker': None, 'cuda': None, 'args': ('--num_epochs', '10'), 'state': 'running', 'program': '/home/alex/simplified_clip/clip_torch.py', 'codePathLocal': 'clip_torch.py', 'codePath': 'clip_torch.py', 'git': {'remote': 'https://github.com/Alexios-hub/simplified_clip.git', 'commit': 'e854edf4755aca99e21dbb86774d0e7b24d5fc5c'}, 'email': '582754347@qq.com', 'root': '/home/alex/simplified_clip', 'host': 'DESKTOP-AKJR3UN', 'username': 'alex', 'executable': '/home/alex/miniconda3/envs/sim_clip/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3494.399, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}, {'current': 3494.399, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 312.9348793029785}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 28.393016815185547}}
+2024-03-18 20:27:48,307 INFO    HandlerThread:232185 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-18 20:27:48,307 INFO    HandlerThread:232185 [system_monitor.py:probe():227] Publishing system info
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_info.py:_save_pip():68] Saving pip packages done
+2024-03-18 20:27:48,307 DEBUG   HandlerThread:232185 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-03-18 20:27:48,957 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/requirements.txt
+2024-03-18 20:27:48,957 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/conda-environment.yaml
+2024-03-18 20:27:49,406 DEBUG   HandlerThread:232185 [system_info.py:_save_conda():87] Saving conda packages done
+2024-03-18 20:27:49,406 INFO    HandlerThread:232185 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-18 20:27:49,407 DEBUG   SenderThread:232185 [sender.py:send():380] send: files
+2024-03-18 20:27:49,407 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-03-18 20:27:49,409 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:27:49,410 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:27:49,411 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:27:49,935 DEBUG   SenderThread:232185 [sender.py:send():380] send: telemetry
+2024-03-18 20:27:49,957 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/conda-environment.yaml
+2024-03-18 20:27:49,957 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-metadata.json
+2024-03-18 20:27:50,645 INFO    wandb-upload_0:232185 [upload_job.py:push():131] Uploaded file /tmp/tmppfiyb1zkwandb/bfyg6pmh-wandb-metadata.json
+2024-03-18 20:27:52,935 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:27:57,936 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:02,937 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:04,411 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:28:04,411 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:28:04,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:28:08,711 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:13,712 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:18,719 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:19,411 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:28:19,412 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:28:19,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:28:19,963 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/config.yaml
+2024-03-18 20:28:24,761 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:29,762 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:34,411 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:28:34,412 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:28:34,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:28:35,761 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:40,763 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:45,765 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:48,293 DEBUG   SystemMonitor:232185 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-18 20:28:48,295 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:28:49,412 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:28:49,412 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:28:49,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:28:51,719 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:28:56,720 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:01,722 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:04,411 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:29:04,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:29:04,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:29:07,707 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:12,709 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:17,710 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:18,296 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:29:19,412 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:29:19,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:29:19,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:29:22,772 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:27,774 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:29,988 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:29:31,988 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:29:33,267 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:34,412 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:29:34,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:29:34,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:29:35,989 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:29:38,761 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:43,761 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:48,296 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:29:49,297 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:49,413 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:29:49,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:29:49,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:29:54,771 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:29:59,772 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:04,412 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:30:04,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:30:04,457 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:30:05,671 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:09,239 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:09,239 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:09,239 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:09,240 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:09,996 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:11,288 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:11,997 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:12,246 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:12,246 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:12,246 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:12,247 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:12,997 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:13,997 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:16,804 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:16,962 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:16,963 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:16,963 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:16,963 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:16,998 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:18,297 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:30:19,413 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:30:19,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:30:19,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:30:19,915 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:19,915 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:19,915 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:19,916 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:19,999 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:19,999 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:21,999 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:22,365 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:22,731 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:22,732 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:22,732 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:22,742 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:23,000 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:25,546 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:25,546 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:25,546 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:25,547 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:26,000 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:26,000 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:27,996 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:28,001 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:28,291 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:28,292 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:28,292 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:28,301 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:29,001 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:30,002 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:31,144 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:31,144 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:31,144 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:31,145 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:32,002 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:33,591 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:33,927 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:33,928 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:33,928 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:33,928 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:34,003 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:34,003 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:34,413 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:30:34,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:30:34,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:30:36,003 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:36,745 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:36,746 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:36,746 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:36,746 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:37,004 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:39,194 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:39,538 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:39,539 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:39,539 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:39,539 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:40,004 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:40,005 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:42,005 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:42,331 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:42,332 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:42,332 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:42,332 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:43,006 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:44,006 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:44,780 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:45,137 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:45,137 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:45,137 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:45,138 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:46,006 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:47,929 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:47,929 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:47,929 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:47,930 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:48,007 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:48,007 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:48,297 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:30:49,413 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:30:49,413 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:30:49,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:30:50,008 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:50,710 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:50,728 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:50,729 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:50,729 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:50,729 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:51,008 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:53,536 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:53,536 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:53,537 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:53,537 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:54,009 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:54,009 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:55,987 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:30:56,009 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:56,326 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:56,327 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:56,327 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:56,327 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:30:57,009 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:30:58,010 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:30:59,110 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:30:59,110 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:30:59,110 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:30:59,110 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:00,010 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:01,559 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:01,935 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:01,935 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:01,935 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:01,935 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:02,011 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:02,011 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:04,012 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:04,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:31:04,414 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:31:04,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:31:04,862 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:04,863 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:04,863 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:04,863 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:05,012 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:07,315 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:07,713 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:07,713 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:07,713 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:07,713 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:08,013 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:08,013 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:10,013 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:10,528 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:10,529 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:10,529 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:10,529 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:11,014 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:12,014 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:12,976 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:13,335 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:13,335 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:13,335 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:13,335 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:14,014 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:16,015 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:16,217 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:16,218 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:16,218 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:16,218 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:17,015 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:18,016 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:18,298 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:31:18,299 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:19,116 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:19,117 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:19,117 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:19,117 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:19,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:31:19,414 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:31:19,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:31:20,016 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:21,932 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:21,932 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:21,932 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:21,932 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:22,017 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:22,017 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:23,380 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:24,017 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:24,729 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:24,729 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:24,729 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:24,729 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:25,017 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:26,018 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:27,514 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:27,515 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:27,515 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:27,515 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:28,018 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:28,963 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:30,019 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:30,332 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:30,332 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:30,332 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:30,332 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:31,019 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:32,020 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:33,238 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:33,238 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:33,238 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:33,239 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:34,020 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:34,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:31:34,414 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:31:34,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:31:34,765 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:36,021 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:36,093 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:36,093 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:36,093 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:36,094 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:37,021 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:38,022 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:39,038 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:39,038 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:39,038 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:39,039 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:40,022 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:40,490 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:41,907 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:41,907 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:41,907 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:41,907 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:42,023 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:42,023 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:44,023 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:44,833 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:44,833 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:44,833 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:44,833 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:45,023 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:46,283 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:47,714 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:47,714 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:47,715 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:47,715 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:48,024 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:48,025 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:48,299 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:31:49,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:31:49,414 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:31:49,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:31:50,025 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:50,651 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:50,652 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:50,652 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:50,652 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:51,025 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:52,025 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:52,105 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:53,448 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:53,448 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:53,448 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:53,448 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:54,026 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:56,026 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:56,304 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:56,304 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:56,304 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:56,304 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:31:57,027 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:31:57,751 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:31:58,027 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:31:59,118 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:31:59,118 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:31:59,118 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:31:59,118 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:00,028 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:01,914 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:01,914 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:01,914 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:01,915 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:02,028 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:02,028 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:03,363 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:04,029 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:04,414 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:32:04,414 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:32:04,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:32:04,713 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:04,734 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:04,734 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:04,735 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:05,029 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:06,030 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:07,513 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:07,513 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:07,513 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:07,513 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:08,030 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:08,962 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:10,031 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:10,461 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:10,461 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:10,461 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:10,461 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:11,031 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:12,032 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:13,308 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:13,309 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:13,309 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:13,309 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:14,032 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:14,756 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:16,033 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:16,108 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:16,108 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:16,109 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:16,109 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:17,033 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:18,033 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:18,299 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:32:18,905 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:18,905 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:18,905 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:18,906 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:19,034 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:19,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:32:19,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:32:19,417 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:32:20,697 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:21,828 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:21,829 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:21,829 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:21,829 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:22,034 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:22,035 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:24,036 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:24,670 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:24,670 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:24,670 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:24,671 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:25,036 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:26,036 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:26,123 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:27,476 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:27,477 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:27,477 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:27,477 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:28,036 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:30,037 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:30,290 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:30,291 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:30,291 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:30,291 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:31,037 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:31,739 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:32,037 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:33,096 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:33,096 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:33,096 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:33,097 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:34,038 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:34,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:32:34,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:32:34,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:32:36,039 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:36,073 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:36,073 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:36,074 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:36,074 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:37,039 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:37,523 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:38,039 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:39,025 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:39,026 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:39,026 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:39,026 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:39,040 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:41,896 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:41,897 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:41,897 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:41,897 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:42,040 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:42,041 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:43,349 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:44,041 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:44,705 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:44,705 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:44,706 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:44,706 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:45,041 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:46,042 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:47,497 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:47,498 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:47,498 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:47,499 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:48,042 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:48,300 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:32:49,301 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:49,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:32:49,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:32:49,417 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:32:50,043 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:50,300 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:50,300 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:50,300 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:50,300 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:51,043 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:52,044 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:53,277 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:53,277 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:53,277 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:53,278 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:54,044 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:54,728 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:32:56,044 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:56,275 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:56,275 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:56,275 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:56,275 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:57,045 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:32:58,045 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:32:59,282 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:32:59,282 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:32:59,282 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:32:59,283 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:32:59,733 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:00,046 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:02,046 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:02,296 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:02,297 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:02,297 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:02,297 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:03,047 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:04,047 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:04,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:33:04,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:33:04,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:33:04,769 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:05,288 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:05,288 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:05,288 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:05,288 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:06,048 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:08,048 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:08,275 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:08,276 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:08,276 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:08,276 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:09,048 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:10,049 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:10,726 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:11,293 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:11,293 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:11,293 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:11,293 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:12,049 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:14,050 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:14,259 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:14,259 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:14,259 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:14,260 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:15,050 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:16,051 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:16,711 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:17,210 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:17,211 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:17,211 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:17,211 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:18,051 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:18,300 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:33:19,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:33:19,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:33:19,416 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:33:20,052 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:20,101 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:20,102 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:20,102 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:20,102 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:21,052 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:22,052 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:22,552 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:23,221 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:23,222 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:23,222 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:23,222 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:24,053 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:26,053 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:26,069 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:26,069 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:26,069 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:26,070 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:27,054 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:28,054 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:28,521 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:29,067 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:29,067 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:29,067 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:29,067 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:30,055 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:32,055 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:32,082 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:32,082 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:32,082 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:32,083 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:33,056 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:33,532 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:34,056 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:34,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:33:34,416 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:33:34,417 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:33:35,199 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:35,200 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:35,200 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:35,200 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:36,057 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:38,057 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:38,086 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:38,086 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:38,087 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:38,087 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:38,536 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:39,058 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:40,058 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:41,075 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:41,076 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:41,085 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:41,085 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:42,058 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:44,051 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:44,052 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:44,052 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:44,052 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:44,052 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:44,059 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:44,059 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:46,059 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:47,059 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:47,060 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:47,060 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:47,060 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:48,060 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:48,301 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:33:49,301 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:49,415 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-18 20:33:49,415 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: stop_status
+2024-03-18 20:33:49,417 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:33:50,060 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:50,237 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:50,237 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:50,237 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:50,238 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:51,061 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:52,061 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:53,221 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-18 20:33:53,222 DEBUG   SenderThread:232185 [sender.py:send():380] send: history
+2024-03-18 20:33:53,222 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: summary_record
+2024-03-18 20:33:53,223 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:54,062 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:54,675 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:56,062 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:56,260 DEBUG   SenderThread:232185 [sender.py:send():380] send: exit
+2024-03-18 20:33:56,260 INFO    SenderThread:232185 [sender.py:send_exit():585] handling exit code: 255
+2024-03-18 20:33:56,261 INFO    SenderThread:232185 [sender.py:send_exit():587] handling runtime: 367
+2024-03-18 20:33:56,261 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:56,261 INFO    SenderThread:232185 [sender.py:send_exit():593] send defer
+2024-03-18 20:33:56,261 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,261 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-18 20:33:56,261 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,261 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-18 20:33:56,261 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 1
+2024-03-18 20:33:56,261 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,261 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-18 20:33:56,262 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,262 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-18 20:33:56,262 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 2
+2024-03-18 20:33:56,262 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,262 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-18 20:33:56,262 INFO    HandlerThread:232185 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-18 20:33:56,262 INFO    HandlerThread:232185 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-18 20:33:56,262 DEBUG   SystemMonitor:232185 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-18 20:33:56,262 INFO    HandlerThread:232185 [interfaces.py:finish():202] Joined disk monitor
+2024-03-18 20:33:56,262 DEBUG   SystemMonitor:232185 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-18 20:33:56,269 INFO    HandlerThread:232185 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-18 20:33:56,269 INFO    HandlerThread:232185 [interfaces.py:finish():202] Joined memory monitor
+2024-03-18 20:33:56,269 INFO    HandlerThread:232185 [interfaces.py:finish():202] Joined network monitor
+2024-03-18 20:33:56,269 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 3
+2024-03-18 20:33:56,270 DEBUG   SenderThread:232185 [sender.py:send():380] send: stats
+2024-03-18 20:33:56,270 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,270 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-18 20:33:56,270 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 4
+2024-03-18 20:33:56,270 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,270 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-18 20:33:56,270 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-18 20:33:56,270 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 5
+2024-03-18 20:33:56,270 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,270 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-18 20:33:56,271 DEBUG   SenderThread:232185 [sender.py:send():380] send: summary
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-18 20:33:56,271 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 6
+2024-03-18 20:33:56,271 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,271 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-18 20:33:56,271 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 7
+2024-03-18 20:33:56,271 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: status_report
+2024-03-18 20:33:56,271 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:56,271 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-18 20:33:56,271 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:56,271 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-18 20:33:57,063 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:33:57,261 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 20:33:58,063 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:33:59,547 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 8
+2024-03-18 20:33:59,547 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: poll_exit
+2024-03-18 20:33:59,547 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:59,548 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-18 20:33:59,549 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:33:59,549 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-18 20:33:59,550 INFO    SenderThread:232185 [job_builder.py:build():281] Attempting to build job artifact
+2024-03-18 20:33:59,550 INFO    SenderThread:232185 [job_builder.py:_get_source_type():393] is repo sourced job
+2024-03-18 20:33:59,554 INFO    SenderThread:232185 [job_builder.py:build():369] adding wandb-job metadata file
+2024-03-18 20:33:59,573 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 9
+2024-03-18 20:33:59,574 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:33:59,574 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-18 20:33:59,575 DEBUG   SenderThread:232185 [sender.py:send():380] send: artifact
+2024-03-18 20:34:00,065 INFO    Thread-12 :232185 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:34:00,899 INFO    SenderThread:232185 [sender.py:send_artifact():1456] sent artifact job-https___github.com_Alexios-hub_simplified_clip.git_clip_torch.py - {'id': 'QXJ0aWZhY3Q6NzYwNjE1NDk4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NDEwOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzYwNjE1NDk4', 'versionIndex': 0}}}
+2024-03-18 20:34:00,899 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:00,899 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-18 20:34:00,899 INFO    SenderThread:232185 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-18 20:34:01,067 INFO    SenderThread:232185 [dir_watcher.py:finish():388] scan: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files
+2024-03-18 20:34:01,067 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/conda-environment.yaml conda-environment.yaml
+2024-03-18 20:34:01,068 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-metadata.json wandb-metadata.json
+2024-03-18 20:34:01,069 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json wandb-summary.json
+2024-03-18 20:34:01,073 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/config.yaml config.yaml
+2024-03-18 20:34:01,074 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log output.log
+2024-03-18 20:34:01,081 INFO    SenderThread:232185 [dir_watcher.py:finish():402] scan save: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/requirements.txt requirements.txt
+2024-03-18 20:34:01,082 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 10
+2024-03-18 20:34:01,082 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:34:01,082 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-18 20:34:01,084 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:01,084 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-18 20:34:01,084 INFO    SenderThread:232185 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-18 20:34:01,882 INFO    wandb-upload_1:232185 [upload_job.py:push():131] Uploaded file /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/wandb-summary.json
+2024-03-18 20:34:01,883 INFO    wandb-upload_0:232185 [upload_job.py:push():131] Uploaded file /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/conda-environment.yaml
+2024-03-18 20:34:02,070 INFO    wandb-upload_2:232185 [upload_job.py:push():131] Uploaded file /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/config.yaml
+2024-03-18 20:34:02,100 INFO    wandb-upload_4:232185 [upload_job.py:push():131] Uploaded file /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/requirements.txt
+2024-03-18 20:34:02,167 INFO    wandb-upload_3:232185 [upload_job.py:push():131] Uploaded file /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/files/output.log
+2024-03-18 20:34:02,263 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-18 20:34:02,368 INFO    Thread-11 (_thread_body):232185 [sender.py:transition_state():613] send defer: 11
+2024-03-18 20:34:02,369 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:34:02,370 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-18 20:34:02,371 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:02,372 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-18 20:34:02,372 INFO    SenderThread:232185 [file_pusher.py:join():181] waiting for file pusher
+2024-03-18 20:34:02,372 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 12
+2024-03-18 20:34:02,372 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:34:02,372 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-18 20:34:02,373 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:02,373 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-18 20:34:02,373 INFO    SenderThread:232185 [file_stream.py:finish():595] file stream finish called
+2024-03-18 20:34:03,232 INFO    SenderThread:232185 [file_stream.py:finish():599] file stream finish is done
+2024-03-18 20:34:03,233 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 13
+2024-03-18 20:34:03,233 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:34:03,233 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-18 20:34:03,234 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:03,234 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-18 20:34:03,235 INFO    SenderThread:232185 [sender.py:transition_state():613] send defer: 14
+2024-03-18 20:34:03,235 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: defer
+2024-03-18 20:34:03,236 INFO    HandlerThread:232185 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-18 20:34:03,236 DEBUG   SenderThread:232185 [sender.py:send():380] send: final
+2024-03-18 20:34:03,237 DEBUG   SenderThread:232185 [sender.py:send():380] send: footer
+2024-03-18 20:34:03,237 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: defer
+2024-03-18 20:34:03,237 INFO    SenderThread:232185 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-18 20:34:03,237 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-18 20:34:03,238 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: server_info
+2024-03-18 20:34:03,238 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-18 20:34:03,238 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-18 20:34:03,238 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-18 20:34:03,238 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: poll_exit
+2024-03-18 20:34:03,238 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: server_info
+2024-03-18 20:34:03,239 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: job_info
+2024-03-18 20:34:03,502 DEBUG   SenderThread:232185 [sender.py:send_request():407] send_request: job_info
+2024-03-18 20:34:03,503 INFO    MainThread:232185 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-03-18 20:34:03,504 INFO    MainThread:232185 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-03-18 20:34:03,504 INFO    MainThread:232185 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2024-03-18 20:34:03,505 DEBUG   HandlerThread:232185 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-18 20:34:03,506 INFO    HandlerThread:232185 [handler.py:finish():866] shutting down handler
+2024-03-18 20:34:04,239 INFO    WriterThread:232185 [datastore.py:close():294] close: /home/alex/simplified_clip/wandb/run-20240318_202747-9zv13kbl/run-9zv13kbl.wandb
+2024-03-18 20:34:04,503 INFO    SenderThread:232185 [sender.py:finish():1534] shutting down sender
+2024-03-18 20:34:04,504 INFO    SenderThread:232185 [file_pusher.py:finish():175] shutting down file pusher
+2024-03-18 20:34:04,504 INFO    SenderThread:232185 [file_pusher.py:join():181] waiting for file pusher

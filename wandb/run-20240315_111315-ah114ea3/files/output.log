@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▍                                                                            | 148/27741 [01:24<4:24:13,  1.74it/s]Traceback (most recent call last):
+  File "/home/alex/simplified_clip/run_clip_2.py", line 582, in <module>
+    main()
+  File "/home/alex/simplified_clip/run_clip_2.py", line 547, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1638, in train
+    return inner_training_loop(
+  File "/home/alex/simplified_clip/transformers/src/transformers/trainer.py", line 1943, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/accelerate/data_loader.py", line 462, in __iter__
+    next_batch = next(dataloader_iter)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2807, in __getitems__
+    batch = self.__getitem__(keys)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2803, in __getitem__
+    return self._getitem(key)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2788, in _getitem
+    formatted_output = format_table(
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 629, in format_table
+    return formatter(pa_table, query_type=query_type)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 400, in __call__
+    return self.format_batch(pa_table)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 515, in format_batch
+    return self.transform(batch)
+  File "/home/alex/simplified_clip/run_clip_2.py", line 447, in transform_images
+    images = [read_image(image_file, mode=ImageReadMode.RGB) for image_file in examples[image_column]]
+  File "/home/alex/simplified_clip/run_clip_2.py", line 447, in <listcomp>
+    images = [read_image(image_file, mode=ImageReadMode.RGB) for image_file in examples[image_column]]
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/io/image.py", line 259, in read_image
+    return decode_image(data, mode)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torchvision/io/image.py", line 236, in decode_image
+    output = torch.ops.image.decode_image(input, mode.value)
+  File "/home/alex/miniconda3/envs/sim_clip/lib/python3.10/site-packages/torch/_ops.py", line 755, in __call__
+    return self._op(*args, **(kwargs or {}))
+KeyboardInterrupt

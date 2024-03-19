@@ -1,0 +1,69 @@
+2024-03-15 00:57:00,049 INFO    StreamThr :658646 [internal.py:wandb_internal():86] W&B internal server running at pid: 658646, started at: 2024-03-15 00:57:00.048528
+2024-03-15 00:57:00,056 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status
+2024-03-15 00:57:00,057 INFO    WriterThread:658646 [datastore.py:open_for_write():85] open: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/run-87nznsyv.wandb
+2024-03-15 00:57:00,058 DEBUG   SenderThread:658646 [sender.py:send():380] send: header
+2024-03-15 00:57:00,059 DEBUG   SenderThread:658646 [sender.py:send():380] send: run
+2024-03-15 00:57:00,882 INFO    SenderThread:658646 [dir_watcher.py:__init__():211] watching files in: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files
+2024-03-15 00:57:00,882 INFO    SenderThread:658646 [sender.py:_start_run_threads():1122] run started: 87nznsyv with start time 1710435420.046567
+2024-03-15 00:57:00,907 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: check_version
+2024-03-15 00:57:00,907 DEBUG   SenderThread:658646 [sender.py:send_request():407] send_request: check_version
+2024-03-15 00:57:01,227 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: run_start
+2024-03-15 00:57:01,235 DEBUG   HandlerThread:658646 [system_info.py:__init__():32] System info init
+2024-03-15 00:57:01,235 DEBUG   HandlerThread:658646 [system_info.py:__init__():47] System info init done
+2024-03-15 00:57:01,235 INFO    HandlerThread:658646 [system_monitor.py:start():194] Starting system monitor
+2024-03-15 00:57:01,236 INFO    HandlerThread:658646 [system_monitor.py:probe():214] Collecting system info
+2024-03-15 00:57:01,236 INFO    SystemMonitor:658646 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-15 00:57:01,241 INFO    SystemMonitor:658646 [interfaces.py:start():190] Started cpu monitoring
+2024-03-15 00:57:01,242 INFO    SystemMonitor:658646 [interfaces.py:start():190] Started disk monitoring
+2024-03-15 00:57:01,244 INFO    SystemMonitor:658646 [interfaces.py:start():190] Started gpu monitoring
+2024-03-15 00:57:01,246 INFO    SystemMonitor:658646 [interfaces.py:start():190] Started memory monitoring
+2024-03-15 00:57:01,249 INFO    SystemMonitor:658646 [interfaces.py:start():190] Started network monitoring
+2024-03-15 00:57:01,255 DEBUG   HandlerThread:658646 [system_info.py:probe():196] Probing system
+2024-03-15 00:57:01,257 DEBUG   HandlerThread:658646 [system_info.py:_probe_git():181] Probing git
+2024-03-15 00:57:01,263 DEBUG   HandlerThread:658646 [system_info.py:_probe_git():189] Probing git done
+2024-03-15 00:57:01,263 DEBUG   HandlerThread:658646 [system_info.py:probe():244] Probing system done
+2024-03-15 00:57:01,264 DEBUG   HandlerThread:658646 [system_monitor.py:probe():223] {'os': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-03-14T16:57:01.255433', 'startedAt': '2024-03-14T16:57:00.027917', 'docker': None, 'cuda': None, 'args': ('--per_device_train_batch_size', '64', '--per_device_eval_batch_size', '64'), 'state': 'running', 'program': '/home/alex/simplified_clip/run_clip.py', 'codePathLocal': 'run_clip.py', 'codePath': 'run_clip.py', 'git': {'remote': 'https://github.com/Alexios-hub/simplified_clip.git', 'commit': 'e854edf4755aca99e21dbb86774d0e7b24d5fc5c'}, 'email': '582754347@qq.com', 'root': '/home/alex/simplified_clip', 'host': 'DESKTOP-AKJR3UN', 'username': 'alex', 'executable': '/home/alex/miniconda3/envs/sim_clip/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 3494.4000000000005, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}, {'current': 3494.4, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 264.1339874267578}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 28.39301300048828}}
+2024-03-15 00:57:01,264 INFO    HandlerThread:658646 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-15 00:57:01,264 INFO    HandlerThread:658646 [system_monitor.py:probe():227] Publishing system info
+2024-03-15 00:57:01,264 DEBUG   HandlerThread:658646 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-03-15 00:57:01,266 DEBUG   HandlerThread:658646 [system_info.py:_save_pip():68] Saving pip packages done
+2024-03-15 00:57:01,266 DEBUG   HandlerThread:658646 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-03-15 00:57:01,453 DEBUG   HandlerThread:658646 [system_info.py:_save_conda():87] Saving conda packages done
+2024-03-15 00:57:01,457 INFO    HandlerThread:658646 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-15 00:57:01,460 DEBUG   SenderThread:658646 [sender.py:send():380] send: files
+2024-03-15 00:57:01,460 INFO    SenderThread:658646 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-03-15 00:57:01,474 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-15 00:57:01,475 DEBUG   SenderThread:658646 [sender.py:send_request():407] send_request: stop_status
+2024-03-15 00:57:01,483 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-15 00:57:01,896 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/requirements.txt
+2024-03-15 00:57:01,897 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/conda-environment.yaml
+2024-03-15 00:57:01,897 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/wandb-metadata.json
+2024-03-15 00:57:02,010 DEBUG   SenderThread:658646 [sender.py:send():380] send: telemetry
+2024-03-15 00:57:02,011 DEBUG   SenderThread:658646 [sender.py:send():380] send: config
+2024-03-15 00:57:02,014 DEBUG   SenderThread:658646 [sender.py:send():380] send: metric
+2024-03-15 00:57:02,014 DEBUG   SenderThread:658646 [sender.py:send():380] send: telemetry
+2024-03-15 00:57:02,014 DEBUG   SenderThread:658646 [sender.py:send():380] send: metric
+2024-03-15 00:57:02,015 WARNING SenderThread:658646 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2024-03-15 00:57:02,484 INFO    wandb-upload_0:658646 [upload_job.py:push():131] Uploaded file /tmp/tmpiycf9v5iwandb/bawn2o65-wandb-metadata.json
+2024-03-15 00:57:02,886 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/output.log
+2024-03-15 00:57:04,889 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/output.log
+2024-03-15 00:57:06,018 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:11,019 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:16,021 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:21,022 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:26,024 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:31,031 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:31,923 INFO    Thread-17 :658646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/simplified_clip/wandb/run-20240315_005700-87nznsyv/files/config.yaml
+2024-03-15 00:57:36,536 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:41,538 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:46,540 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:51,541 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:57:56,542 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:01,251 DEBUG   SystemMonitor:658646 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-15 00:58:01,260 DEBUG   SenderThread:658646 [sender.py:send():380] send: stats
+2024-03-15 00:58:02,262 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:07,264 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:12,265 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:17,267 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:22,269 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
+2024-03-15 00:58:27,270 DEBUG   HandlerThread:658646 [handler.py:handle_request():146] handle_request: status_report
